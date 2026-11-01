@@ -1,7 +1,7 @@
 <?php
 class TriangleGenerator{
 
-    public function generateTringle(int $altura): string{
+    public function generateTriangle(int $altura): string{
         if($altura < 0) {
             return "";
         }
