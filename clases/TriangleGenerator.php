@@ -1,0 +1,18 @@
+<?php
+class TriangleGenerator{
+
+    public function generateTringle(int $altura): string{
+        if($altura < 0) {
+            return "";
+        }
+        $resultado = "";
+
+        for ($i = 1; $i <= $altura; $i++){
+            $espacios = str_repeat("&nbsp;", $altura - $i);
+            $asteriscos = str_repeat("*", 2 * $i - 1);
+            $resultado .= "<p>" . $espacios . $asteriscos . "</p>";
+        }
+        return $resultado;
+
+    }
+}
